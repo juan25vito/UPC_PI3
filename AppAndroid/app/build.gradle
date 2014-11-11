@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion '20.0.0'
+    defaultConfig {
+        applicationId 'com.distribuidora.appsbo'
+        minSdkVersion 7//4//11
+        targetSdkVersion 18
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    //compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:+'
+    compile "com.android.support:appcompat-v7:18.0.+"
+    //compile 'com.android.support:appcompat-v7:21.0.0'
+    //compile "com.android.support:gridlayout-v7:21.+"
+
+}
