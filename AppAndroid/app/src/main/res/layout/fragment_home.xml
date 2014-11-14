@@ -2,21 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.distribuidora.appsbo.FragmentHome">
+    tools:context=".FragmentHome">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:background="#ffffffff"/>
+        android:text="Importar Clientes"
+        android:id="@+id/button1"
+        android:layout_gravity="center_horizontal|top" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Importar"
-        android:id="@+id/button1" />
+        android:text="Importar Articulos"
+        android:id="@+id/button2"
+        android:layout_gravity="center" />
 
 </FrameLayout>
